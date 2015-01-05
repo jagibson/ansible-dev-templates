@@ -38,6 +38,11 @@ namespace :vagrant do
       end
     end
   end
+  task :down => [:destroy]
+  task :destroy do
+    sh 'vagrant destroy -f'
+  end
+
 end
 
 namespace :ansible do

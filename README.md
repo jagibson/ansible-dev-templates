@@ -4,8 +4,11 @@ ansible-dev-templates
 Templates for ansible development.
 
 `localenv`: Supporting code necessary to help provide a Vagrant environment for local development, applicable both to playbooks and roles
+
 `role`: Files necessary for a role, taken pretty much exactly from `ansible-galaxy init` 
+
 `playbook`: Files to get started developing a playbook
+
 `init.rb`: Method to automatically apply templates to a given ditectory
 
 ## Using `init.rb`

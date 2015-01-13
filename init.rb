@@ -4,7 +4,10 @@ require 'fileutils'
 def init_types 
   return  {
     "playbook" => [ 'playbook', 'localenv' ],
-    "role" => [ 'role', 'localenv' ]
+    "role" => [ 'role', 'localenv' ],
+
+    "playbook-kitchenless" => [ 'playbook', 'localkitchenless' ],
+    "role-kitchenless" => [ 'role', 'localkitchenless' ]
   }
 end
 

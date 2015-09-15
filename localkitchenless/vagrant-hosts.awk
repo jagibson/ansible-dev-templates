@@ -8,4 +8,4 @@ BEGIN { print "[vagrant]" }
 /Port/ { port=$2 } 
 /^[[:space:]]+User[[:space:]]+/ { user=$2 } 
 /IdentityFile/ { keyfile=$2 } 
-/^$/ { printf "%s ansible_ssh_host=%s ansible_ssh_port=%s ansible_ssh_user=%s ansible_ssh_private_key_file=%s\n", host, ip, port, user, keyfile }
+END { printf "%s ansible_ssh_host=%s ansible_ssh_port=%s ansible_ssh_user=%s ansible_ssh_private_key_file=%s\n", host, ip, port, user, keyfile }
